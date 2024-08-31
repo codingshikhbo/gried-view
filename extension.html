@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .header{
+            background-color: aqua;
+            text-align: center;
+        }
+        .nav-menu{
+            background-color: bisque;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        .nav-menu a{
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        .main{
+            background-color: blue;
+            padding: 10px;
+        }
+        .aside{
+            background-color: chocolate;
+            padding: 10px;
+        }
+        .footer{
+            background-color: indianred;
+            padding: 10px;
+        }
+        [class*='col-']{
+            width: 100%;
+        }
+        [class*='col-']{
+            float: left;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        @media screen and (min-width: 600px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            
+        }
+        
+        
+        @media screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+        }
+       
+
+
+       
+
+    </style>
+</head>
+<body>
+   <div class="header">
+     <h1>Anisul Islam</h1>
+   </div>
+   <div class="row">
+        <div class="nav-menu col-s-4 col-2">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="main col-s-8 col-7">
+            <h2>I am a web developer</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem alias assumenda ratione, labore quis tenetur! Veritatis adipisci commodi neque mollitia laborum a quo delectus voluptas eveniet incidunt at natus, architecto fugit tenetur id blanditiis dignissimos culpa similique et in aliquid amet reprehenderit quos! Provident nam nihil non optio nemo rerum distinctio, blanditiis numquam dignissimos quis praesentium ducimus molestiae dolor? At rerum, quidem ea quas maxime optio deleniti numquam minima ut illum, aliquam ullam neque voluptatum! Laudantium corporis ratione distinctio, ducimus eum minima explicabo eius perspiciatis deserunt, vitae dignissimos! Natus fugit saepe, autem aut iusto tenetur temporibus tempore perferendis praesentium unde!</p>
+        </div>
+        <div class="aside col-s-12 col-3">
+            <h2>what i am</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus hic distinctio illo dolor quasi expedita dicta, eveniet repellendus voluptates dolores.</p>
+        </div>
+   </div>
+   <div class="footer col-s-12">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero fugiat cupiditate ducimus dolore, voluptatibus iure tenetur quia voluptas! Dolorum, quis.</p>
+   </div>
+    
+</body>
+</html>
